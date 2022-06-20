@@ -82,9 +82,12 @@ int main()
     double duration = (getTickCount() - start) / getTickFrequency();
     cout << duration << endl;
     // flip(result, result, 0); // vertical
-    flip(result, result, 1); // horizental
+    // flip(result, result, 1); // horizental
 
-    imwrite("2.jpeg", result);
+    // roi
+    Mat roi(result, Rect(result.cols/2, result.rows/2, 
+    result.cols/2, result.rows/2));
+    imwrite("2.jpeg", roi);
     
     return 0;
 }
