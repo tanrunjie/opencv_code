@@ -11,13 +11,11 @@ using namespace cv;
 int main()
 {
     Mat image = imread("1.jpeg");
-    Mat result;
     const int64 start = getTickCount();
     // my code
 
     double duration = (getTickCount() - start) / getTickFrequency();
     cout << duration << endl;
-    imwrite("2.jpeg", result);
     
     return 0;
 }
