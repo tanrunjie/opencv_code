@@ -10,7 +10,7 @@ using namespace cv;
 
 int main()
 {
-    Mat image = imread("1.jpeg");
+    Mat src = imread("1.jpeg");
     const int64 start = getTickCount();
     // my code
 
