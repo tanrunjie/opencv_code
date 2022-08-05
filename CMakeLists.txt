@@ -16,6 +16,6 @@ find_package(OpenCV REQUIRED)
 # directory of opencv headers
 include_directories(${OpenCV_INCLUDE_DIRS})
 # name of executable file and path of source file
-add_executable(main main.cpp)
+add_executable(main core_module/Mat.cpp)
 link_directories(${OpenCV_LIBRARY_DIRS})
 target_link_libraries(main ${OpenCV_LIBS})
