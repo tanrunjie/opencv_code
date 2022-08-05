@@ -100,7 +100,7 @@ Mat& ScanImageAndReduceRandomAccess(Mat& I, const uchar* const table)
 
 int main()
 {
-    Mat I = imread("pic1.jpeg",IMREAD_COLOR);
+    Mat I = imread("1.jpeg",IMREAD_COLOR);
     if(!I.data)
     {
         printf("No image data\n");

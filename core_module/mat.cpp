@@ -80,15 +80,6 @@ int main()
         vPoints[i] = Point2f((float)(i*5), (float)(i%7));
     cout << vPoints << endl;
 
-
-
-
-
-
-
-
-
-
     double duration = (getTickCount() - start) / getTickFrequency();
     cout << duration << "s" <<  endl;
 
